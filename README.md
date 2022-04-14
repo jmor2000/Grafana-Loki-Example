@@ -26,7 +26,7 @@
        Data is displayed in single counters or on an x y graph.
     5. Users can view the data via a browser
     
-![alt text](https://github.com/jmor2000/Grafana-Loki-Example/blob/e9cd2ac48ef775422565cc9438779f083160ca8d/Images/Overview.JPG?raw=true)
+![alt text](https://raw.githubusercontent.com/jmor2000/Grafana-Loki-Example/main/Images/Overview.JPG?raw=true)
  
  # Grafana-Dashboard
     Single Counts:
@@ -41,7 +41,7 @@
     Log List:
     {job="app1"} != "Alive"
 
-![alt text](https://github.com/jmor2000/Grafana-Loki-Example/blob/24ab8aef5b7ceb6c0dc24fc234e8331582a6af8d/Images/Dashboard.JPG?raw=true)
+![alt text](https://raw.githubusercontent.com/jmor2000/Grafana-Loki-Example/main/Images/Dashboard.JPG?raw=true)
     
  # Installation Steps
  
@@ -61,22 +61,22 @@
     7. Update Source\Grafana-Promtail\config.yaml with your new file paths
            filename: C:\Users\JEF\Documents\GitHub\Grafana-Loki-Example\Source\Grafana-Promtail\positions.yaml # This location needs to be writeable by Promtail.
            __path__: C:\Users\JEF\Documents\GitHub\Grafana-Loki-Example\Source\Python Logger\app1.log       
-  
     8. Run Source\Grafana-Promtail "Launch_promtail.cmd"
     9. Wait for promtail to load config and confirm successful operation.
     Note: Lanuched Promtail config can be checked at http://localhost:9080/targets
     Note: Promtail can be pre-configured via Source\Grafana-Promtail\config.yaml
     
+    Python
     10. Run Source\Python Logger "Launch_Python.cmd"
     11. Got to Grafana loki2 dashboard and refresh to see data
     
 # Useful Links
 
-    Grafana-Loki
-    - https://grafana.com/docs/loki/latest/getting-started/?pg=oss-loki&plcmt=resources
-    - https://grafana.com/docs/loki/latest/logql/
+  Grafana-Loki
+  - https://grafana.com/docs/loki/latest/getting-started/?pg=oss-loki&plcmt=resources
+  - https://grafana.com/docs/loki/latest/logql/
     
-    Log File data extraction, with regex:
-    - https://regex101.com/
-    - https://github.com/google/re2/wiki/Syntax#ascii
-    - https://grafana.com/docs/loki/latest/clients/promtail/stages/regex/   
+  Log File data extraction, with regex:
+  - https://regex101.com/
+  - https://github.com/google/re2/wiki/Syntax#ascii
+  - https://grafana.com/docs/loki/latest/clients/promtail/stages/regex/
