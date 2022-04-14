@@ -73,10 +73,10 @@
 # Useful Links
 
     Grafana-Loki
-    - https://grafana.com/docs/loki/latest/getting-started/?pg=oss-loki&plcmt=resources
-    - https://grafana.com/docs/loki/latest/logql/
+    - [a link](https://grafana.com/docs/loki/latest/getting-started/?pg=oss-loki&plcmt=resources)
+    - [a link](https://grafana.com/docs/loki/latest/logql/)
     
     Log File data extraction, with regex:
-    - https://regex101.com/
-    - https://github.com/google/re2/wiki/Syntax#ascii
-    - https://grafana.com/docs/loki/latest/clients/promtail/stages/regex/   
+    - [a link](https://regex101.com/)
+    - [a link](https://github.com/google/re2/wiki/Syntax#ascii)
+    - [a link](https://grafana.com/docs/loki/latest/clients/promtail/stages/regex/)
