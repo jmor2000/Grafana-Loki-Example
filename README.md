@@ -73,8 +73,8 @@
 # Useful Links
 
     Grafana-Loki
-[a link](https://grafana.com/docs/loki/latest/getting-started/?pg=oss-loki&plcmt=resources)
-    - [a link](https://grafana.com/docs/loki/latest/logql/)
+    https://grafana.com/docs/loki/latest/getting-started/?pg=oss-loki&plcmt=resources)
+    https://grafana.com/docs/loki/latest/logql/
     
     Log File data extraction, with regex:
     - [a link](https://regex101.com/)
