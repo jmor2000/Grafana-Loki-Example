@@ -28,3 +28,19 @@ This is an example of how to use Grafana-Loki to monitor log files, and present 
 
 ![alt text](https://github.com/jmor2000/Grafana-Loki-Example/blob/e9cd2ac48ef775422565cc9438779f083160ca8d/Images/Overview.JPG?raw=true)
 
+
+# Grafana Displays
+
+Single Counts:
+    count_over_time({info="INFO",job="app1"}|="Alive"[60m])
+    count_over_time({info="INFO",job="app1"}|="Exiting"[60m])
+    count_over_time({info="INFO",job="app1"}|="Started"[60m])
+    count_over_time({info="INFO",job="app1"}|="Starting"[60m])
+
+Graph X Y
+    count_over_time({job="app1"}[$__interval])
+
+Log List
+    {job="app1"} != "Alive"
+    
+    
