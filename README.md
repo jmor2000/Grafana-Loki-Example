@@ -32,10 +32,10 @@ This is an example of how to use Grafana-Loki to monitor log files, and present 
 # Grafana Displays
     
 Single Counts:
-count_over_time({info="INFO",job="app1"}|="Alive"[60m])
-count_over_time({info="INFO",job="app1"}|="Exiting"[60m])
-count_over_time({info="INFO",job="app1"}|="Started"[60m])
-count_over_time({info="INFO",job="app1"}|="Starting"[60m])
+    -count_over_time({info="INFO",job="app1"}|="Alive"[60m])
+    -count_over_time({info="INFO",job="app1"}|="Exiting"[60m])
+    -count_over_time({info="INFO",job="app1"}|="Started"[60m])
+    -count_over_time({info="INFO",job="app1"}|="Starting"[60m])
 
 Graph X Y:
 count_over_time({job="app1"}[$__interval])
