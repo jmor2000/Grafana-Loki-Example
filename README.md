@@ -61,12 +61,12 @@
     7. Update Source\Grafana-Promtail\config.yaml with your new file paths
            filename: C:\Users\JEF\Documents\GitHub\Grafana-Loki-Example\Source\Grafana-Promtail\positions.yaml # This location needs to be writeable by Promtail.
            __path__: C:\Users\JEF\Documents\GitHub\Grafana-Loki-Example\Source\Python Logger\app1.log       
-  
     8. Run Source\Grafana-Promtail "Launch_promtail.cmd"
     9. Wait for promtail to load config and confirm successful operation.
     Note: Lanuched Promtail config can be checked at http://localhost:9080/targets
     Note: Promtail can be pre-configured via Source\Grafana-Promtail\config.yaml
     
+    Python
     10. Run Source\Python Logger "Launch_Python.cmd"
     11. Got to Grafana loki2 dashboard and refresh to see data
     
