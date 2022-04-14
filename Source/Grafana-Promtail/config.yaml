@@ -3,7 +3,7 @@ server:
   grpc_listen_port: 0
 
 positions:
-  filename: C:\Users\JEF\Documents\GitHub\Grafana-Loki-Example\Grafana-Promtail\positions.yaml # This location needs to be writeable by Promtail.
+  filename: C:\Users\JEF\Documents\GitHub\Grafana-Loki-Example\Source\Grafana-Promtail\positions.yaml # This location needs to be writeable by Promtail.
 
 client:
   url: http://localhost:3100/loki/api/v1/push
@@ -13,7 +13,7 @@ scrape_configs:
     static_configs:
     - labels:
         job: app1
-        __path__: C:\Users\JEF\Documents\GitHub\Grafana-Loki-Example\Python Logger\app1.log
+        __path__: C:\Users\JEF\Documents\GitHub\Grafana-Loki-Example\Source\Python Logger\app1.log
     pipeline_stages:
       - regex:
           expression: "(?P<time>\\S+ *\\S+) - (?P<type>\\S+) - (?P<info>\\S+) - (?P<content>.*)"
