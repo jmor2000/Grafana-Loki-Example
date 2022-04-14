@@ -42,5 +42,5 @@ Graph X Y
 
 Log List
     {job="app1"} != "Alive"
-    
-    
+
+![alt text](https://github.com/jmor2000/Grafana-Loki-Example/blob/24ab8aef5b7ceb6c0dc24fc234e8331582a6af8d/Images/Dashboard.JPG?raw=true)
