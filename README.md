@@ -12,7 +12,6 @@
     - Command line scripts (.cmd) launchs all programs
 
 # Functional Flow:
-
     1. Pyton script executes and logs data to a log file
         -Log entries: Starting Process, Process Started, Alive, Exiting.
         -Alive is written every 1 second.
@@ -28,7 +27,8 @@
     5. Users can view the data via a browser
     
 ![alt text](https://github.com/jmor2000/Grafana-Loki-Example/blob/e9cd2ac48ef775422565cc9438779f083160ca8d/Images/Overview.JPG?raw=true)
-    
+ 
+ # Grafana-Dashboard
     Single Counts:
     count_over_time({info="INFO",job="app1"}|="Alive"[60m])
     count_over_time({info="INFO",job="app1"}|="Exiting"[60m])
@@ -43,11 +43,40 @@
 
 ![alt text](https://github.com/jmor2000/Grafana-Loki-Example/blob/24ab8aef5b7ceb6c0dc24fc234e8331582a6af8d/Images/Dashboard.JPG?raw=true)
     
-    
  # Installation Steps
-    a.
-    b.
-    c.
+ 
+    Grafana
+    1. Download folder "Source"
+    2. Run Source\Grafana "Docker_grafana.cmd"
+    3. Upon successful installation of grafana in docker, open up web-browser: http://localhost:3000
+    4. login to grafana, navigate to loki2 dashboard http://localhost:3000/d/1ODPrIU7z/loki2?orgId=1&refresh=1m
+    Note: Grafana can be pre-configured via grafanan.ini
     
-    to be continued [14_April_2022]
+    Loki
+    5. Run Source\Loki "Docker_loki.cmd"
+    6. Check for  successful installation of loki in docker
+    Note: Loki can be pre-configured via Source\loki\local-config.yaml
     
+    Promtail
+    7. Update Source\Grafana-Promtail\config.yaml with your new file paths
+           filename: C:\Users\JEF\Documents\GitHub\Grafana-Loki-Example\Source\Grafana-Promtail\positions.yaml # This location needs to be writeable by Promtail.
+           __path__: C:\Users\JEF\Documents\GitHub\Grafana-Loki-Example\Source\Python Logger\app1.log       
+  
+    8. Run Source\Grafana-Promtail "Launch_promtail.cmd"
+    9. Wait for promtail to load config and confirm successful operation.
+    Note: Lanuched Promtail config can be checked at http://localhost:9080/targets
+    Note: Promtail can be pre-configured via Source\Grafana-Promtail\config.yaml
+    
+    10. Run Source\Python Logger "Launch_Python.cmd"
+    11. Got to Grafana loki2 dashboard and refresh to see data
+    
+# Useful Links
+
+    Grafana-Loki
+    - https://grafana.com/docs/loki/latest/getting-started/?pg=oss-loki&plcmt=resources
+    - https://grafana.com/docs/loki/latest/logql/
+    
+    Log File data extraction, with regex:
+    - https://regex101.com/
+    - https://github.com/google/re2/wiki/Syntax#ascii
+    - https://grafana.com/docs/loki/latest/clients/promtail/stages/regex/   
