@@ -26,7 +26,7 @@
        Data is displayed in single counters or on an x y graph.
     5. Users can view the data via a browser
     
-![alt text](https://github.com/jmor2000/Grafana-Loki-Example/blob/e9cd2ac48ef775422565cc9438779f083160ca8d/Images/Overview.JPG?raw=true)
+![alt text](https://github.com/jmor2000/Grafana-Loki-Example/Images/Dashboard.JPG?raw=true)
  
  # Grafana-Dashboard
     Single Counts:
